@@ -1,0 +1,120 @@
+[versions]
+agp = "8.8.0"
+kotlin = "2.0.0"
+# Downgrade these to compatible versions
+coreKtx = "1.12.0"
+lifecycleRuntimeKtx = "2.7.0"
+activityCompose = "1.8.2"
+composeBom = "2024.04.01"
+ksp = "2.0.0-1.0.21"
+composeDestinations = "1.9.60"
+navigationCompose = "2.7.7"
+room = "2.6.1"
+hilt = "2.51"
+coroutines = "1.7.3"
+lifecycleViewModelKtx = "2.7.0"
+sqlite = "2.4.0"
+datastore = "1.0.0"
+location = "21.0.1"
+datastorePreferences = "1.0.0"
+nearpay = "2.1.91"
+zxing = "3.5.3"
+journeyappsZxing = "4.3.0"
+retrofit = "2.9.0"
+loggingInterceptor = "4.5.0"
+hiltNavigationCompose = "1.1.0"
+# Fix the junit version reference - rename it
+junitVersion = "4.13.2"  # Changed from 'junit' to 'junitVersion'
+junitExtVersion = "1.1.5"  # Added for AndroidX Junit
+espressoVersion = "3.5.1"
+appcompat = "1.7.1"
+material = "1.13.0"
+activity = "1.8.0"
+constraintlayout = "2.2.1"  # Added for Espresso
+broadcastReceiver = "1.0.0"  # Added for Espresso
+lifecycleCompose = "2.7.0"  # Add this line
+androidxCamera = "1.3.4"  # Add this line
+mlkitBarcode = "17.2.0"  # Add this line
+gif = "1.2.25"  # Add this line
+coil = "2.5.0"  # Add this line
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+
+# Fix these junit dependencies
+junit = { group = "junit", name = "junit", version.ref = "junitVersion" }  # Now references junitVersion
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitExtVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoVersion" }
+
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+
+# Add these libraries for KSP Jetpack Composer
+compose-destinations-core = { group = "io.github.raamcosta.compose-destinations", name = "core", version.ref = "composeDestinations" }
+compose-destinations-ksp = { group = "io.github.raamcosta.compose-destinations", name = "ksp", version.ref = "composeDestinations" }
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
+
+# Room dependencies
+androidx-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+
+# Add these missing libraries
+androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleViewModelKtx" }
+sqlite-framework = { group = "androidx.sqlite", name = "sqlite-framework", version.ref = "sqlite" }
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
+coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines" }
+coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutines" }
+
+# Add DataStore libraries
+androidx-datastore-core = { group = "androidx.datastore", name = "datastore", version.ref = "datastore" }
+androidx-datastore-preferences = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "datastorePreferences" }
+
+# Add zxing SDK
+zxing-sdk = { group = "com.google.zxing", name = "core", version.ref = "zxing" }
+journeyapps_zxing-sdk = { group = "com.journeyapps", name = "zxing-android-embedded", version.ref = "journeyappsZxing" }
+
+# Add NearPay SDK
+nearpay-sdk = { group = "io.nearpay", name = "nearpay-sdk", version.ref = "nearpay" }
+location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "location" }
+
+# Add retrofit & interceptor
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit-converter = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "loggingInterceptor" }
+
+# Add Hilt Navigation Compose
+androidx-hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+android-broadcast = { group = "androidx.localbroadcastmanager", name = "localbroadcastmanager", version.ref = "broadcastReceiver" }
+android-camera-core = { group = "androidx.camera", name = "camera-core", version.ref = "androidxCamera" }
+android-camera-camera2 = { group = "androidx.camera", name = "camera-camera2", version.ref = "androidxCamera" }
+android-camera-lifecycle = { group = "androidx.camera", name = "camera-lifecycle", version.ref = "androidxCamera" }
+android-camera-view = { group = "androidx.camera", name = "camera-view", version.ref = "androidxCamera" }
+barcode-scanning = { group = "com.google.mlkit", name = "barcode-scanning", version.ref = "mlkitBarcode" }
+pl-gif = { group = "pl.droidsonroids.gif", name = "android-gif-drawable", version.ref = "gif" }
+coil-image = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
+coil-gif = { group = "io.coil-kt", name = "coil-gif", version.ref = "coil" }
+
+androidx-lifecycle-compose = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "lifecycleCompose" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+hiltandroid = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+# Add KSP plugin
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
