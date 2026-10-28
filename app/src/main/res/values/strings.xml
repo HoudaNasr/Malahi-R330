@@ -1,0 +1,67 @@
+<resources>
+    <string name="company_name">Osool Company</string>
+    <string name="clear">Clear\nمسح</string>
+    <string name="ok">Ok\nنعم</string>
+    <string name="delete">Delete\nحذف</string>
+    <string name="start_payment">Start Payment\nبدء عملية الدفع</string>
+    <string name="scan_qr">Tap to scan QR\nQR اضغط لمسح</string>
+    <string name="redeem_with_points">Use %1$s Points\nاستخدم %1$s نقطة</string>
+    <string name="tap_to_pay_amount">pay %1$s\nإدفع %1$s</string>
+    <string name="cancel_payment">Cancel Payment\nإلغاء عملية الدفع</string>
+    <string name="click_to_pay_ar">إضغط للدفع</string>
+    <string name="click_to_pay_en">Click to pay</string>
+    <string name="purchase">Purchase\nشراء</string>
+    <string name="waiting_for_payment_request">Waiting for payment request\nبانتظار طلب الدفع</string>
+    <string name="payment_request_received_message">The screen will update when a request is received.\nستتحدث الشاشة عند استلام الطلب</string>
+    <string name="maintenance">Under Maintenance\nخارج الخدمة للصيانة</string>
+    <string name="subscription_expired">Subscription Expired\nإنتهت صلاحية الاشتراك</string>
+    <string name="title_activity_intro_activity">IntroActivityActivity</string>
+    <string name="pos_not_linked">
+    POS is not connected to the MDB \n
+    جهاز الـ POS غير متصل بجهاز MDB
+</string>
+
+    <string name="pos_not_linked_to_kiosk">POS is not connected via USB cable\nجهاز الـ POS غير متصل عبر كابل USB</string>
+
+    <string name="please_wait_ar">الرجاء الإنتظار</string>
+    <string name="please_wait_en">Please Wait</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="press_here_to_select_en">Press Here To Start</string>
+    <string name="press_here_to_select_ar">إضغط هنا للبداية</string>
+    <string name="press_here_to_select_ar_en">Tap To Start\nإضغط هنا للبداية</string>
+
+    <string name="select_product_vending_machine_en">Select Product</string>
+    <string name="select_product_vending_machine_ar">إختر المنتج</string>
+    <string name="cancel">Cancel / إلغاء</string>
+
+    <string name="click_to_scan_en">Tap to scan QR</string>
+    <string name="click_to_pay">Tap to pay\nاضغط للدفع</string>
+    <string name="click_to_scan_ar">اضغط لمسح QR</string>
+    <string name="click_to_scan">Tap to scan QR</string>
+    <string name="click_to_pay_supports_qr">Tap to pay\n (QR supported)\nاضغط للدفع\n(يدعم QR)</string>
+
+    <string name="verifying_message_en">Please wait… verifying your QR</string>
+    <string name="verifying_message_ar">يرجى الانتظار... جاري التحقق من رمز الاستجابة السريعة</string>
+
+    <string name="error_title">خطأ / Error</string>
+
+    <string name="processing_timer">Processing in %1$ds\nجاري المعالجة خلال %1$d ثانية</string>
+    <string name="contiuning_timer">Continuing in %1$ds\nجاري المتابعة خلال %1$d ثانية</string>
+    <string name="after_discount_bilingual">After Discount\nبعد الخصم</string>
+    <string name="confirm">Confirm\nتأكيد</string>
+
+    <string name="discount_applied">Discount Applied\nتم تطبيق الخصم</string>
+    <string name="apply_discount">Have a discount? Scan QR\nهل لديك خصم؟ امسح رمز QR</string>
+    <string name="yes_i_have_discount">Yes, I have\nنعم، لدي خصم</string>
+    <string name="no_discount">No\nلا</string>
+    <string name="enter_pass">Enter Password</string>
+    <string name="unlock_pos">Choose how you want to unlock the POS settings.</string>
+    <string name="scan_qr_settings">Scan QR</string>
+    <string name="valid_for">Valid for: </string>
+    <string name="serial_number">Serial Number</string>
+    <string name="scan_qr_using_portal">Scan this QR code using the Portal application.</string>
+    <string name="scan_to_unlock_pos">Scan to Unlock POS</string>
+    <string name="close">Close</string>
+</resources>

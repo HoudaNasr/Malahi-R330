@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The kiosk PC announces itself with these strings when it switches the R330 into USB accessory mode.
+     Must match UsbAccessoryTransportData.MANUFACTURER / MODEL. -->
+<resources>
+    <usb-accessory manufacturer="RPay" model="R330 Link" />
+</resources>

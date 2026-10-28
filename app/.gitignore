@@ -1,0 +1,12 @@
+/build
+*.jks
+*.keystore
+*.pem
+*.csr
+
+keystore/
+# Android Studio
+.idea/
+
+# Local configuration
+local.properties
