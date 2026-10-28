@@ -64,6 +64,7 @@ class SystemsViewModel @Inject constructor(
         viewModelScope.launch {
 
             prefs.setTerminalSn(deviceInfoProvider.getSerialNumber())
+
             prefs.saveVersionName(appInfoProvider.version.toString())
 
             val sn = prefs.getTerminalSn()
