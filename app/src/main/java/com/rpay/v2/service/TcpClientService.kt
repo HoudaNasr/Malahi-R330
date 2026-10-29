@@ -280,7 +280,7 @@ class TcpClientService : Service() {
                             jsonElement,
                             NearPayAuthUpdateData::class.java
                         )
-
+                        FileLogger.log(context , TAG , authData.toString())
                         clientScope.launch {
                             syncTerminalCredentialsUseCase(
                                 authData.Tid,
@@ -288,6 +288,7 @@ class TcpClientService : Service() {
                             )
                         }
                     } catch (e: Exception) {
+                        FileLogger.log(context , TAG , e.message!!)
                         Log.e(TAG, "Failed to parse NearPay auth update", e)
                     }
                 }

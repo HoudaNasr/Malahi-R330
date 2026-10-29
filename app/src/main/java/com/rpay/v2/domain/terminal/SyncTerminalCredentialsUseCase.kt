@@ -18,6 +18,7 @@ class SyncTerminalCredentialsUseCase @Inject constructor(
     ) {
         val oldTid = appPreferencesRepository.getDeviceTid()
         val tidChanged = newTid?.isNotBlank() == true && oldTid != newTid
+        FileLogger.log(context , "SyncTerminalCredentialsUseCase" , tidChanged.toString())
         if (tidChanged) {
             nearPayManager.logoutAndWait(token!!)
             if (token.isNotBlank()) {

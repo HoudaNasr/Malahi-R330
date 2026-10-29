@@ -229,6 +229,11 @@ class MainActivity : ComponentActivity() {
             delay(5_000)
             kioskManager.lock()
         }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R &&
+            !Environment.isExternalStorageManager()
+        ) {
+            requestAllFilesAccess()
+        }
     }
 
     override fun onPause() {

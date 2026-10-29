@@ -487,6 +487,7 @@ class KioskScreenViewModel @Inject constructor(
         val s = _state.value
         val inTransaction = s.isProcessing && s.lastPaymentRequest != null
         val sn = s.deviceSn.ifBlank { prefsRepo.getTerminalSn() }
+        val tid = s.deviceTid.ifBlank { prefsRepo.getDeviceTid() }
         val body = base("GetPosInfo", null).apply {
             put("TransResult", true)
             put("RespCode", "00")
@@ -497,7 +498,7 @@ class KioskScreenViewModel @Inject constructor(
             put("PosNetworkAvailable", isNetworkAvailable())
             put("HasMSR", true)
             // The kiosk service reads TID as the device id; SN is shown by newer service builds.
-            if (sn.isNotBlank()) put("TID", sn)
+            if (sn.isNotBlank()) put("TID", tid)
             if (sn.isNotBlank()) put("SN", sn)
             put("TestMode", false)
         }
@@ -912,6 +913,7 @@ class KioskScreenViewModel @Inject constructor(
 
     private fun log(message: String) {
         Log.d(TAG, "Log: $message")
+        FileLogger.log(context = context , TAG , message)
     }
 
 }
